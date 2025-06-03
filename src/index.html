@@ -11,6 +11,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="https://use.typekit.net/foh8peo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/app.css">
 
   <script src="scripts/app.js" defer></script>
@@ -18,53 +21,95 @@
 <body>
    
   <header>
-    <nav>
-      <ul>
-        <li><a href="#home">À propos</a></li>
-        <li><a href="#projets">Projets</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+
+    <nav class="navbar">
+      <div class="Logo">S.T</div>
+      <button class="navbar-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="navbar-list">
+        <ul class="navbar-links">
+          <li><a href="#intro">À PROPOS</a></li>
+          <li><a href="#projets">PROJETS</a></li>
+          <li><a href="#contact">CONTACT</a></li> 
+        </ul>
+      </div>
     </nav>
 
+
+    <div class="Main-title-container">
     <h1 class="Main-title">SAHAN TOKSOZ</h1>
+    </div>
+
   </header>
 
-  <section class="Intro">
-    <img src="images/portrait.jpg" alt="Sahan Toksoz" class="Portrait">
-    <p class="Intro-description">Hello, je suis Sahan Toksoz : étudiant à la HEAJ en option Design Web Transmedia. J’ai découvert le monde du web il y a un petit temps et je m’y suis attaché depuis.  Passioné par les jeux vidéos, l’histoire et les memes, j’ai comme ambition de designer et de créer dans ces domaines respectifs.</p>
-    <p class="Intro-description--2"></p>J’aimerais m’aventurer d’avantage dans le domaine de l’UX et du codage Frontend pour pouvoir apprendre de nouvelles pratiques amusantes mais aussi étendre mon skillset.</p>
+  <section class="Intro" id="intro">
+    <img src="assets/images/Capture d'écran 2025-05-25 232138.png" alt="Sahan Toksoz" class="Portrait">
+
+    <div class="Intro-description first">
+      <div></div>
+      <p>Hello, je suis Sahan Toksoz : étudiant à la HEAJ en option Design Web Transmedia. J'ai découvert le monde du web il y a un petit temps et je m'y suis attaché depuis.  Passioné par les jeux vidéos, l’histoire et les memes, j’ai comme ambition de designer et de créer dans ces domaines respectifs.</p>
+    </div>
+
+    <div class="Intro-description second">
+      <p>J'aimerais m'aventurer d'avantage dans le domaine de l'UX et du codage Frontend pour pouvoir apprendre de nouvelles pratiques amusantes mais aussi étendre mon skillset.</p>
+    </div>
+
   </section>
 
-  <section class="Projets">
+  <section class="Project">
 
-    <h2 class="Projets-title">MES PROJETS</h2>
+    <h2 class="Project-title" id="projets">MES PROJETS</h2>
 
-    <div class="Projets-list">
+    <div class="Project-list">
 
-      <article class="Projets-item">
-        <img src="images/project1.jpg" alt="Projet 1" class="Project-image">
-        <h3 class="Projet-name">Design Fiction</h3>
-        <p class="Projet-description">Description du projet 1.</p>
-      </article>
-
-      <article class="Projet-item">
-        <img src="images/project2.jpg" alt="Projet 2" class="Project-image">
-        <h3 class="Project-name">Projet Rethinking UX</h3>
-        <p class="Project-description">Description du projet 2.</p>
-      </article>
-
-      <article class="Projet-item">
-        <img src="images/project3.jpg" alt="Projet 3" class="Project-image">
-        <h3 class="Project-name">Dataplay</h3>
-        <p class="Project-description">Description du projet 3.</p>
-      </article>  
-
+  <div class="Project-block">
+    <div class="Project-text">
+      <h3 class="Project-date">2025</h3>
+      <h3 class="Project-name">Design Fiction</h3>
     </div>
+    <div class="Project-item">
+      <img src="assets/images/Capture d'écran 2025-05-25 232138.png" alt="Screenshot du travail Design Fiction" class="Project-image">
+    </div>
+  </div>
+
+  <div class="Project-block">
+    <div class="Project-text">
+      <h3 class="Project-date">2024</h3>
+      <h3 class="Project-name">Projet Rethinking UX</h3>
+    </div>
+    <div class="Project-item">
+      <img src="assets/images/Capture d'écran 2025-05-25 232138.png" alt="Screenshot du travail Projet Rethinking UX" class="Project-image">
+    </div>
+  </div>
+
+  <div class="Project-block">
+    <div class="Project-text">
+      <h3 class="Project-date">2025</h3>
+      <h3 class="Project-name">Dataplay</h3>
+    </div>
+    <div class="Project-item">
+      <img src="assets/images/Capture d'écran 2025-05-25 232138.png" alt="Screenshot du travail Dataplay" class="Project-image">
+    </div>
+  </div>
+
+</div>
+
+
+    <h2 class="Contact-title" id="contact">CONTACTEZ-MOI</h2>
 
   </section>
   
 
     <footer class="Footer">
+
+      <div class="Footer-line">
+        <span class="Line"></span>
+      </div>
+
       <p class="Footer-text">© 2025 Sahan Toksoz. Tous droits réservés.</p>
     </footer>
 
