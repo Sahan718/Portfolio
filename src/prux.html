@@ -16,7 +16,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/app.css">
 
-  <script src="scripts/app.js" defer></script>
+  <script src="scripts/app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 
 <body>
@@ -24,7 +26,7 @@
   <header>
 
     <nav class="navbar">
-      <div class="Logo">S.T</div>
+      <div class="logo">S.T</div>
       <button class="navbar-toggle">
         <span></span>
         <span></span>
@@ -33,7 +35,7 @@
 
       <div class="navbar-list">
         <ul class="navbar-links">
-          <li><a href="index.html#intro">À PROPOS</a></li>
+          <li><a href="index.html#introduction">À PROPOS</a></li>
           <li><a href="index.html#projets">PROJETS</a></li>
           <li><a href="index.html#contact">CONTACT</a></li> 
         </ul>
@@ -41,25 +43,25 @@
     </nav>
 
 
-    <div class="Main-title-container">
-    <h1 class="Main-title">PROJET RETHINKING UX</h1>
+    <div class="main-title-container fade-in-up">
+    <h1 class="main-title">PROJET RETHINKING UX</h1>
     </div>
 
   </header>
 
-  <section class="Full-image">
+  <section class="full-image fade-in-up">
 
     <img src="assets/images" alt="Image d'intro au PRUX" class="ImageOne">
 
   </section>
 
-  <section class="Text">
+  <section class="text fade-in-up">
 
-    <div class="Column-left">
-      <h3 class="Column-left titles">Introduction</h3>
+    <div class="column-left">
+      <h3 class="column-left titles">Introduction</h3>
     </div> 
 
-    <div class="Column-right">
+    <div class="column-right">
       
       <p>Le Project Rethinking User Experience (ou PRUX) était un projet qui avait pour but d'aménager un local au services des étudiants de la HEAJ.</p>
       <p>Pour mener à bien ce projet, la classe de l'option Design Web et Transmédia s'est réparti en plusieurs groupes afin de pouvoir obtenir plusieurs points de vue et méthodes différents pour pouvoir donner à ce local un nouveau souffle. </p>
@@ -68,19 +70,19 @@
 
   </section>
 
-  <section class="Full-image">
+  <section class="full-image fade-in-up">
 
     <img src="assets/images" alt="Image qui montre une partie du projet" class="ImageOne">
 
   </section>
 
-  <section class="Text">
+  <section class="text fade-in-up">
 
-    <div class="Column-left">
-      <h3 class="Column-left titles">Concept</h3>
+    <div class="column-left">
+      <h3 class="column-left titles">Concept</h3>
     </div> 
 
-    <div class="Column-right">
+    <div class="column-right">
       
       <p>Le concept qu'on a imaginé était de créer un espace de travail et de détente pour les étudiants. Nous avons voulu créer un lieu où les étudiants pourraient se rassembler, travailler ensemble, mais aussi se détendre et se ressourcer. Pour cela, nous avons imaginé un espace modulable, avec des zones de travail, des zones de repos et des espaces de rencontre.</p>
       <p>Nous voulions tout d'abord que cet espace soit polyvalent : il y aurait la présence d'outils pour le travail comme des tableaux, du matériel informatique, mais aussi de détente comme des poufs et un projecteur.</p>
@@ -89,19 +91,19 @@
 
   </section>
 
-  <section class="Full-image">
+  <section class="full-image fade-in-up">
 
     <img src="assets/images" alt="Image qui montre une partie du projet" class="ImageOne">
 
   </section>
 
-  <section class="Text">
+  <section class="text fade-in-up">
 
-    <div class="Column-left">
-      <h3 class="Column-left titles">Méthode</h3>
+    <div class="column-left">
+      <h3 class="column-left titles">Méthode</h3>
     </div> 
 
-    <div class="Column-right">
+    <div class="column-right">
       
       <p>La méthode par laquelle nous devions présenter ce projet devait se faire via un site web de type "article/newsletter". L'idée d'un design minimaliste avec l'utilisation de couleurs noires et blanches paraissait l'idéal pour le présenter.</p>
       <p>J'ai utilisé une approche très "géométrique" : les polices, les formes et les silouhettes sont, pour la plupart, de forme carrée. Le layout est structuré et symétrique.</p>
@@ -110,18 +112,47 @@
 
   </section>
 
-  <a href="http://sahantoksoz.be/projets/rethinking-ux/" class="Contact-title" id="contact">VOIR LE PROJET</a>
+  <a href="http://sahantoksoz.be/projets/rethinking-ux/" class="contact-title fade-in-up" id="contact">VOIR LE PROJET</a>
   
 
-    <footer class="Footer">
+  <section class="project fade-in-up">
 
-      <div class="Footer-line">
-        <span class="Line"></span>
+    <h2 class="project-title" id="projets">MES AUTRES PROJETS</h2>
+
+    <div class="project-list">
+
+    <a href="designfiction.html" class="project-block">
+      <div class="project-text">
+        <h3 class="project-date">2025</h3>
+        <h3 class="project-name">Design Fiction</h3>
+      </div>
+      <div class="project-item">
+        <img src="assets/images/Capture d'écran 2025-05-25 232138.png" alt="Screenshot du travail Design Fiction" class="project-image">
+      </div>
+    </a>
+
+  <a href="janus.html" class="project-block">
+    <div class="project-text">
+      <h3 class="project-date">2024</h3>
+      <h3 class="project-name">Janus</h3>
+    </div>
+    <div class="project-item">
+      <img src="assets/images/Capture d'écran 2025-05-25 232138.png" alt="Screenshot du travail Janus" class="project-image">
+    </div>
+  </a>
+    </div>
+</section>
+
+    <footer class="footer">
+
+      <div class="footer-line">
+        <span class="line"></span>
       </div>
 
-      <p class="Footer-text">© 2025 Sahan Toksoz. Tous droits réservés.</p>
+      <p class="footer-text">© 2025 Sahan Toksoz. Tous droits réservés.</p>
 
-      <a href="credits.html" class="Footer-credits">Crédits</a>
+      <a href="credits.html" class="footer-credits">Crédits</a>
     </footer>
 
 </body>
+</html>

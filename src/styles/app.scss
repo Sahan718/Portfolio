@@ -30,9 +30,15 @@ footer {
     text-align: center;
 }
 
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+
 @media (min-width: 390px) {
 
-/* Beurger Menu mobile */
+/* Burger Menu mobile */
 
     .navbar {
     display: flex;
@@ -45,7 +51,7 @@ footer {
     position: relative;
     }
 
-    .Logo {
+    .logo {
     font-size: 32px;
     font-family: "operetta 18", serif;
     padding-left: 10px;
@@ -158,12 +164,12 @@ footer {
 
     /*Section intro*/
 
-    .Intro {
+    .intro {
     display: flex;
     flex-direction: column;
     }
 
-.Main-title {
+.main-title {
   font-family: "Operetta 18", serif;
   font-size: 2.5rem;
   font-weight: bold;
@@ -171,14 +177,14 @@ footer {
   margin-bottom: 2rem;
 }
 
-.Portrait {
+.portrait {
   width: 220px;
   height: 300px;
   object-fit: contain;
   margin-bottom: 2rem;
 }
 
-.Intro-description{
+.intro-description{
     display: grid;
     grid-template-columns: 20% 80%;
     text-align: left;
@@ -186,13 +192,13 @@ footer {
     max-width: 90%;
 }
 
-.Intro-description.first {
+.intro-description.first {
     grid-column: 2 / 3;
     text-align: left;
     max-width: 90%;
     }
 
-.Intro-description.second {
+.intro-description.second {
     grid-template-columns: 80% 20%;
     text-align: left;
     max-width: 90%;
@@ -201,13 +207,13 @@ footer {
 
 /* Section Projets */
 
-.Project-list {
+.project-list {
   display: flex;
   flex-direction: column;
   gap: 1rem; 
 }
 
-.Project-block {
+.project-block {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: flex-start;
@@ -216,7 +222,7 @@ footer {
 }
 
 
-.Project-text {
+.project-text {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -225,12 +231,14 @@ footer {
   color: white;
 }
 
-.Project-date {
+.project-date {
+  font-family: "raleway", sans-serif;
   font-size: 11px;
+  font-weight: 200;
   margin: 0;
 }
 
-.Project-name {
+.project-name {
   font-family: "raleway", sans-serif;
   font-size: 19px;
   font-weight: bold;
@@ -242,7 +250,7 @@ a{
     color: white;
 }
 
-.Project-image {
+.project-image {
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -250,23 +258,24 @@ a{
 
 /* Footer + Contact */
 
-.Footer-line{
+.footer-line{
     justify-content: center;
     display: flex;
     width: 100%;
     flex-direction: row;
 }
 
-.Contact-title {
+.contact-title {
     font-family: "operetta 18", serif;
     font-size: 36px;
     text-align: center; 
     display: block;
     margin: 2rem auto;
+    margin-bottom: 4rem;
     text-decoration:underline;
 }
 
-.Line {
+.line {
     width: 100%;
     height: 2px;
     background-color: white;
@@ -276,7 +285,7 @@ a{
 
 /* La section Case study */
 
-.Full-image {
+.full-image {
     width: 100%;
     height: auto;
     max-width: 100%;
@@ -284,13 +293,13 @@ a{
     margin-bottom: 1rem;
 }
 
-.Column-left.titles {
+.column-left.titles {
     font-family: "operetta 18", serif;
     font-size: 33px;
     margin: 1rem ;
 }
 
-.Column-right {
+.column-right {
     display: flex;
     flex-direction: column;
     max-width: 75%;
@@ -303,6 +312,6 @@ a{
 
 @media (min-width: 1280px){
 
-
+  
     
 }
