@@ -118,6 +118,8 @@ footer {
         transform-origin: center;
     }
 
+/* Navbar avec liste mobile aidé par l'IA : ligne 131 à 136, ligne 139 à 141*/
+
    .navbar-list {
     position: fixed;
     top: 0;
@@ -146,7 +148,7 @@ footer {
     }
 
     .navbar-links li {
-    margin: 1rem 0;
+    margin: 6rem 0;
     font-family: "operetta 18", serif;
     font-size: 40px;
     }
@@ -154,7 +156,7 @@ footer {
     .navbar-links a {
     text-decoration: none;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     }
 
     /* Tailles de fonts */
@@ -222,7 +224,7 @@ footer {
     padding-left: 10px;
 }
 
-/* Section Projets */
+/* Section Projets + liste de projets*/
 
 .project-list {
   display: flex;
@@ -289,7 +291,7 @@ a{
     display: block;
     margin: 2rem auto;
     margin-bottom: 4rem;
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
 .line {
@@ -300,7 +302,7 @@ a{
 }
 
 
-/* La section Case study */
+/* La section Case study de tous les travaux */
 
 .imageFull {
     width: 100vw;
@@ -328,16 +330,21 @@ a{
 }
 
 
+/* Version Desktop */
+
 @media (min-width: 1024px){
 
     p{
         font-size: 20px;
     }
 
+    /* Navbar avec liste visible sur desktop*/
 
   .navbar-toggle {
     display: none;
   }
+
+  /* Navbar aidé par l'IA : ligne 348 à 356, ligne 378 à 390 */
 
   .navbar-list {
     position: static;
@@ -390,6 +397,8 @@ a{
     margin-top: 4rem;
     } 
 
+/* Section Intro */
+
   .intro {
     flex-direction: row;
     align-items: flex-start;
@@ -400,7 +409,7 @@ a{
   .portrait {
     width: 50%;
     max-width: 400px;
-    height: auto;
+    height: 90%;
     margin-left: 1rem;
   }
 
@@ -410,13 +419,15 @@ a{
     flex-direction: column;
     justify-content: center;
     gap: 1.5rem;
-    margin-top: 3rem;
+    margin-top: 6rem;
   }
 
   .intro-description.first, .intro-description.second {
     display: block;
     padding: 0;
   }
+
+/* Section liste Projets */
 
   .project-block {
     gap: 10px;
@@ -446,7 +457,29 @@ a{
   .project-name {
     font-size: 63px;
     align-items: center;
+    position: relative;
+    display: inline-block;
   }
+
+  /* Animation de la ligne sous le nom du projet aidé par l'IA : ligne 466 à 476*/
+
+  .project-name::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+.project-block:hover .project-name::after {
+  width: 100%;
+}
+
+
+/* Footer */
 
   .footer-credits{
     font-size: 20px;
@@ -454,6 +487,8 @@ a{
     margin-bottom: 2rem;
   }
 
+
+  /*Animation image en hover : aidé par l'IA de la ligne 492 à 493*/
   .project-image {
   transition: transform 0.4s ease;
 }
@@ -462,13 +497,14 @@ a{
   transform: scale(1.03);
 }
 
+/* Case study layout*/
 
-  .full-image img {
-    width: 100vw;
-    height: auto;
-    object-fit: contain;
-    margin-bottom: 1rem;
-}
+    .full-image img {
+        width: 100vw;
+        height: auto;
+        object-fit: contain;
+        margin-bottom: 1rem;
+    }
 
     .text {
         display: grid;

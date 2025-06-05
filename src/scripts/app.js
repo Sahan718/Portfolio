@@ -21,6 +21,8 @@
   });
 
 
+// Aidé de l'IA pour l'animarion de fade-in-up 
+
 document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(ScrollTrigger);
 
