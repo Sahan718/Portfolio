@@ -43,6 +43,15 @@ footer {
   transform: translateY(-100%);
 }
 
+.logo {
+  font-size: 32px;
+  font-family: "operetta 18", serif;
+  padding-left: 10px;
+  color: black;
+  text-decoration: none;
+  z-index: 1001;
+}
+
 
 @media (min-width: 390px) {
 
@@ -354,8 +363,27 @@ a{
   }
 
   .navbar-links a {
+    position: relative;
     color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
   }
+
+  .navbar-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: black; 
+    transition: width 0.3s ease;
+}
+
+  .navbar-links a:hover::after {
+    width: 100%;
+    }
 
     .main-title{
     font-size: 152px;
@@ -391,7 +419,7 @@ a{
   }
 
   .project-block {
-    gap: 5px;
+    gap: 10px;
   }
 
   .project-text {
@@ -425,6 +453,15 @@ a{
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
+
+  .project-image {
+  transition: transform 0.4s ease;
+}
+
+  .project-block:hover .project-image {
+  transform: scale(1.03);
+}
+
 
   .full-image img {
     width: 100vw;
